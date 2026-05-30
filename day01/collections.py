@@ -31,4 +31,10 @@ print("===打印单价最高的产品===")
 most_expensive = max(products, key=lambda p: p["price"])
 print(f"单价最高的产品是：{most_expensive['name']}，单价为：{most_expensive['price']}")
 
+print("===打印库存最多的产品===")
+most_stock = max(products, key= lambda p: p["stock"])
+print(f"库存剩余最多的产品是：{most_stock['name']}，库存为：{most_stock['stock']}")
 
+print("===打印总价最高的产品===")
+most_total_price = max(products, key= lambda p: p["price"] * p["stock"])
+print(f"总价值最高的产品是：{most_total_price['name']}")

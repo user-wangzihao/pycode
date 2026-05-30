@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "user": "Alice",
+    "message": "你好，今天天气怎么样？",
+    "timestamp": "2026-05-20"
+  },
+  {
+    "id": 2,
+    "user": "Bob",
+    "message": "在吗",
+    "timestamp": "2026-05-20"
+  },
+  {
+    "id": 3,
+    "user": "Alice",
+    "message": "我想了解一下Python的lambda表达式，能详细讲一下吗？",
+    "timestamp": "2026-05-21"
+  },
+  {
+    "id": 4,
+    "user": "Charlie",
+    "message": "ok",
+    "timestamp": "2026-05-21"
+  },
+  {
+    "id": 5,
+    "user": "Bob",
+    "message": "请帮我写一个排序算法，要求时间复杂度O(n log n)",
+    "timestamp": "2026-05-22"
+  },
+  {
+    "id": 6,
+    "user": "Alice",
+    "message": "嗯",
+    "timestamp": "2026-05-22"
+  },
+  {
+    "id": 7,
+    "user": "Charlie",
+    "message": "Python 和 Java 在做 AI 项目时各有什么优劣？",
+    "timestamp": "2026-05-23"
+  }
+]
