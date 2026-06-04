@@ -9,7 +9,7 @@ def load_students(filename):
     """读取学生数据"""
     with open(filename, "r", encoding="utf-8") as f:
         data = json.load(f)
-    # print(json.dumps(data, ensure_ascii=False, indent=2))
+    print(json.dumps(data, ensure_ascii=False, indent=2))
     return data
 
 def calc_average(student):
@@ -22,7 +22,7 @@ def calc_average(student):
         total_subject += 1
         print
     avg_score = round(total_score / total_subject, 2)
-    # print(f"{student.get('name')}的平均分为：{avg_score}")
+    print(f"{student.get('name')}的平均分为：{avg_score}")
     student_avg_map = {}
     student_avg_map["name"] = student.get("name")
     student_avg_map["avg"] = avg_score
@@ -38,7 +38,7 @@ def get_top_n(students, n=3):
         student_avg_list.append(calc_average(student))
     sorted_student = sorted(student_avg_list, key=lambda stu: stu.get("avg"), reverse=True)
     top_n_student = sorted_student[0:n]
-    # print(top_n_student)
+    print(top_n_student)
 
 
 def get_failed_students(students, pass_score=60):
@@ -53,7 +53,7 @@ def get_failed_students(students, pass_score=60):
                 fail_subject[key] = value
         if fail_subject:
             fail_student.append({"name": student.get("name"), "fail_subject": fail_subject})
-    # print(fail_student)
+    print(fail_student)
     pass
 
 
@@ -68,7 +68,7 @@ def get_subject_stats(students, subject):
     max_score = max(subject_statistics)
     min_score = min(subject_statistics)
     avg_score = sum(subject_statistics) / len(subject_statistics)
-    # print(f"{subject}的最高分为：{max_score}，最低分为：{min_score}，平均分为：{avg_score:.2f}")
+    print(f"{subject}的最高分为：{max_score}，最低分为：{min_score}，平均分为：{avg_score:.2f}")
 
 
 def save_report(students, filename):

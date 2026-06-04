@@ -1,0 +1,10 @@
+2026-05-20 10:23:15 INFO User Alice logged in
+2026-05-20 10:24:02 INFO Request started
+2026-05-20 10:24:05 ERROR Database connection timeout
+2026-05-20 10:25:10 INFO User Bob logged in
+2026-05-20 10:26:18 WARN High memory usage: 85%
+2026-05-20 10:27:33 ERROR Failed to call LLM API: rate limit exceeded
+2026-05-20 10:28:01 INFO User Alice logged out
+2026-05-20 10:29:45 ERROR Invalid token format
+2026-05-20 10:30:12 INFO Request completed
+2026-05-20 10:31:50 WARN Slow query: 3.2s
